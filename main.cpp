@@ -5,7 +5,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainCoordinator* coordinator = new MainCoordinator;
-    coordinator->start();
+    MainCoordinator coordinator;
+    coordinator.start();
     return a.exec();
 }
