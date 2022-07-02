@@ -13,3 +13,14 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::configureWith(MainViewModel *viewModel)
+{
+    this->viewModel = viewModel;
+}
+
+//
+void MainWindow::on_btnVariable_clicked()
+{
+    this->viewModel->on_btnVariable_clicked();
+}
+
