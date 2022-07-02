@@ -1,17 +1,17 @@
-#ifndef EXPRESSION_H
-#define EXPRESSION_H
+#ifndef SUM_H
+#define SUM_H
 
 #include "expressioninterface.h"
+
 #include <QObject>
 
-class Expression : public QObject, ExpressionInterface
+class Sum : public QObject, ExpressionInterface
 {
     Q_OBJECT
 public:
-    explicit Expression(QObject *parent = nullptr);
+    explicit Sum(QObject *parent = nullptr);
 
 signals:
-
 
     // ExpressionInterface interface
 private:
@@ -19,4 +19,4 @@ private:
     void calculate() override;
 };
 
-#endif // EXPRESSION_H
+#endif // SUM_H

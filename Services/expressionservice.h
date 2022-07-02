@@ -2,12 +2,17 @@
 #define EXPRESSIONSERVICE_H
 
 #include <QObject>
+#include <expression.h>
 
 class ExpressionService : public QObject
 {
     Q_OBJECT
-public:
+
+    Expression* model;
+
     explicit ExpressionService(QObject *parent = nullptr);
+
+    public: static ExpressionService shared;
 
 signals:
 

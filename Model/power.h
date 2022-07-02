@@ -1,17 +1,17 @@
-#ifndef EXPRESSION_H
-#define EXPRESSION_H
+#ifndef POWER_H
+#define POWER_H
 
 #include "expressioninterface.h"
+
 #include <QObject>
 
-class Expression : public QObject, ExpressionInterface
+class Power : public QObject, ExpressionInterface
 {
     Q_OBJECT
 public:
-    explicit Expression(QObject *parent = nullptr);
+    explicit Power(QObject *parent = nullptr);
 
 signals:
-
 
     // ExpressionInterface interface
 private:
@@ -19,4 +19,4 @@ private:
     void calculate() override;
 };
 
-#endif // EXPRESSION_H
+#endif // POWER_H

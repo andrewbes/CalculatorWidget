@@ -1,17 +1,17 @@
-#ifndef EXPRESSION_H
-#define EXPRESSION_H
+#ifndef MULT_H
+#define MULT_H
 
 #include "expressioninterface.h"
+
 #include <QObject>
 
-class Expression : public QObject, ExpressionInterface
+class Mult : public QObject, ExpressionInterface
 {
     Q_OBJECT
 public:
-    explicit Expression(QObject *parent = nullptr);
+    explicit Mult(QObject *parent = nullptr);
 
 signals:
-
 
     // ExpressionInterface interface
 private:
@@ -19,4 +19,4 @@ private:
     void calculate() override;
 };
 
-#endif // EXPRESSION_H
+#endif // MULT_H
