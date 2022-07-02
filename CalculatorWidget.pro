@@ -1,4 +1,6 @@
 include(Gui/Gui.pri)
+include(Model/Model.pri)
+
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -21,6 +23,10 @@ HEADERS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    Model/Model.pri \
+    Services/Services.pri
 
 
 
