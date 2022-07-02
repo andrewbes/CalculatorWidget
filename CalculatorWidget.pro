@@ -1,5 +1,6 @@
 include(Gui/Gui.pri)
 include(Model/Model.pri)
+include(Services/Services.pri)
 
 QT       += core gui
 
